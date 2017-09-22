@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="node_modules/mocha/mocha.css">
@@ -29,9 +33,12 @@
 
     <section id="lists"></section>
 
-
+    <script src="src/components/task.js"></script>
+    <script src="src/components/list.js"></script>
+    <script src="src/components/app.js"></script>
+    <script src="src/index.js"></script>
     <!-- <div> for Mocha to display test results. -->
-    <div id="mocha"></div>
+    <!-- <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
     <script>mocha.setup('bdd');</script>
     <script src="node_modules/chai/chai.js"></script>
@@ -43,6 +50,6 @@
     <script src="test/listTest.js"></script>
     <script src="test/appTest.js"></script>
     <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
-  </div><!-- #main-content -->
+  </div>< #main-content -->
 </body>
 </html>
