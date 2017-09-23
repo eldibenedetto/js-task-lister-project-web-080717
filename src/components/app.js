@@ -1,7 +1,7 @@
 class App {
   //your code here!
   constructor() {
-
+    this.lists = [];
   }
 
   render() {
@@ -39,10 +39,24 @@ class App {
         alert("Hey! Pay attention!!!!")
       }
 
+      $('body').on('click', '.deleteList', (event)=>{
+        let id = event.target.id;
+        App.deleteList(id);
+      })
+
     })
   }
 
-  deleteList() {
-
+  static deleteList(id){
+    for(let i= List.all().length - 1; i>= 0 ; i--){
+      if(List.all()[i].id == id){
+        // debugger;
+        List.all().splice(i,1);
+        let taskDiv = document.getElementById(id);
+        taskDiv.parentNode.removeChild(taskDiv);
+        let dropdown = document.getElementById(`list${id}`)
+        dropdown.parentNode.removeChild(dropdown);
+      }
+    }
   }
 }

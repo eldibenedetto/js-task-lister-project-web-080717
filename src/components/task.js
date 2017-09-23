@@ -12,8 +12,8 @@ const Task = (() => {
     }
 
     render() {
-      return `<li>${this.description}</li><br>
-              <li>${this.priority}</li>`
+      return `<li><u>Task:</u> ${this.description}<br>
+                <u>Priority:</u> ${this.priority}</li>`
     }
   }
 

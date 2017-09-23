@@ -1,5 +1,5 @@
 html {
-	background: linear-gradient(blue, pink);
+	background: grey;
 	background-size: cover;
 	height: 100%;
 	min-height: 100%;
@@ -54,10 +54,10 @@ input[type="text"], select {
 }
 
 input[type="submit"], button {
-	background: linear-gradient(red, orange);
+	background: blue;
 	padding:5px 10px;
 	border:1px solid #333;
-	color:#000;
+	color:white;
 	border-radius:5px;
 	box-shadow: 2px 2px 0px #666;
 	font-weight:bold;

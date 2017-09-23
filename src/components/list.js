@@ -20,9 +20,8 @@ const List = (() => {
     }
 
     render() {
-      return `<div id="${this.id}"> <h3>
-      ${this.title}
-        </h3>
+      return `<div id="${this.id}">
+      <h2>${this.title}</h2>
         <ul>
         ${this.tasks.map(function(task){
           return task.render();
@@ -30,11 +29,13 @@ const List = (() => {
       ).join('')
       }
         </ul>
+        <br>
+        <button class="deleteList" id="${this.id}">delete</button>
       </div>`
     }
 
     renderDropdown(){
-      return `<option value= ${this.id}>${this.title}</option>`
+      return `<option value= ${this.id} id="list${this.id}">${this.title}</option>`
     }
 
     static all(){
